@@ -2,7 +2,7 @@
 network=si
 
 build:
-	docker build --no-cache -t eyedeekay/xd-dockersetup .
+	docker build --force-rm -t eyedeekay/xd-dockersetup .
 
 run:
 	docker run -i -t -d \
