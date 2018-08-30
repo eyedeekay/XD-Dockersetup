@@ -12,7 +12,7 @@ WORKDIR /home/xd/
 USER xd
 RUN XD torrents.ini & sleep 1;
 RUN sed -i 's|127.0.0.1:7656|sam-host:7656|g' torrents.ini
-RUN sed -i 's|127.0.0.1|sam-xd|g' torrents.ini
+RUN sed -i 's|127.0.0.1|172.80.80.197|g' torrents.ini
 RUN sed -i 's|1488|1489|g' torrents.ini
 RUN cat torrents.ini
 CMD XD torrents.ini
