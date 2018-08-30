@@ -28,6 +28,9 @@ mon:
 		--security-opt apparmor=docker-default \
 		eyedeekay/xd-dockersetup surf http://172.80.80.197:1489
 
+lmon:
+	surf http://172.80.80.197:1489
+
 
 init: build run
 	docker cp ~/.config/XD/storage/ sam-xd:/home/xd/storage
