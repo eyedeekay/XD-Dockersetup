@@ -46,3 +46,12 @@ add:
 
 list:
 	docker exec sam-xd XD-cli list | less
+
+install:
+	install -m755 XD-cli-docker "/usr/local/bin/XD-cli-docker"
+	install -m755 XD-cli-docker "/usr/local/bin/XD-cli-d"
+
+remove:
+	rm -f "/usr/local/bin/XD-cli-docker"
+	rm -f "/usr/local/bin/XD-cli-d"
+
